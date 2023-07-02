@@ -34,7 +34,7 @@ I currently work with the following tools:
 
 ## **Code Example**
 
-`
+```js
 const MIU = {
     name: 'Igor',
     age: 40,
@@ -43,9 +43,9 @@ const MIU = {
     vision: '100%',
     allergy: false,
 
-    language: ['english', 'čeština'],
+    language: ['english', 'čeština']
 }
-`
+```
 
 ## **Experience**
 
@@ -59,7 +59,7 @@ Some time ago I decided to return to the IT field and now I study modern stacks 
 
 ## **More links:**
 
-![My contacts: ->]( https://mehal.my.canva.site/)
-![More information about me: ->](https://sites.google.com/view/zivotopis-miu)
-![My Github: ->](https://github.com/MIU-cz)
-![FaceBook: ->](https://www.facebook.com/mehaligor.cz/)
+[My contacts: ->]( https://mehal.my.canva.site/)
+[More information about me: ->](https://sites.google.com/view/zivotopis-miu)
+[My Github: ->](https://github.com/MIU-cz)
+[FaceBook: ->](https://www.facebook.com/mehaligor.cz/)
