@@ -6,7 +6,7 @@
 
 U+F3E7 | **Location:** | Czech republic
 U+F4E2 | **Phone:** | +420 723 854 208
-U+F32C | **E-mail:**| <mehal.cz@gmail.com>
+U+F32C | **E-mail:** | <mehal.cz@gmail.com>
 U+F3ED | **Git-hub:** | <https://github.com/MIU-cz>
 
 Контакты для связи
