@@ -4,11 +4,11 @@
 
 ## **Contacts**
 
-| U+F3E7 | **Location:** | Czech republic |
+| ![geo](img/geo-alt-fill.svg) | **Location:** | Czech republic |
 | ------ | ------------- | -------------------------- |
-| U+F4E2 | **Phone:** | +420 723 854 208 |
-| U+F32C | **E-mail:** | <mehal.cz@gmail.com> |
-| &#xF3ED; | **Git-hub:** | <https://github.com/MIU-cz> |
+| ![phone](img/phone-vibrate-fill.svg) | **Phone:** | +420 723 854 208 |
+| ![e-mail](img/envelope-at-fill.svg) | **E-mail:** | <mehal.cz@gmail.com> |
+| ![git-hub](img/github.svg) | **Git-hub:** | <https://github.com/MIU-cz> |
 
 Контакты для связи
 Краткая информация о себе (ваша цель и приоритеты, подчеркните свои сильные стороны, расскажите о своём опыте работы, если опыта работы нет, расскажите о своём стремлении учиться и узнавать новое)
