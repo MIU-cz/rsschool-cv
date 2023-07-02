@@ -12,7 +12,7 @@
 
 ## **About Me**
 
-I am a front-end developer and coder.
+I am a front-end developer and coder.  
 In other words, I help company representatives find a human face on the Internet, make their business and the result of their business understandable to a wide range of people.
 
 I can be useful for you in developing websites, landing pages for product promotion, creating product presentation and more.
@@ -34,7 +34,7 @@ I currently work with the following tools:
 * Bootstrap
 * BEM
 
-> BPM, Figma, GIMP, Muse, Canva, Tilda, Wix, WordPress, MS PowerPoint presentations, Google Tools and more.
+> BPM, Figma, GIMP, Muse, Canva, Tilda, Wix, WordPress, MS PowerPoint presentations, Google Tools and more..
 
 ## **Code Example**
 
@@ -56,7 +56,7 @@ const MIU = {
 
 ## **Experience**
 
-I have extensive experience in business development, this will help me understand in detail what the customer needs and offer a really working solution.
+I have extensive experience in business development, this will help me understand in detail what the customer needs and offer a really working solution.  
 I have held senior management positions in companies in the construction, manufacturing, exhibition and trade fair industries, etc.
 
 > “The best thing about a boolean is even if you are wrong,  
@@ -64,7 +64,7 @@ I have held senior management positions in companies in the construction, manufa
 
 ## **Education**
 
-I have a university degree in software engineering.
+I have a university degree in software engineering.  
 Some time ago I decided to return to the IT field and now I study modern stacks and technologies.
 
 > “The most damaging phrase in the language is… it’s always been done this way”  
@@ -79,9 +79,9 @@ now learning:
 * czeh
 * and a single language for all the inhabitants of the planet earth -> programming languages  
 
-> ### **More links:**
-
-* [My contacts: ->]( https://mehal.my.canva.site/)  
-* [More information about me: ->](https://sites.google.com/view/zivotopis-miu)  
-* [My Github: ->](https://github.com/MIU-cz)  
-* [FaceBook: ->](https://www.facebook.com/mehaligor.cz/)
+> ### **More links:**  
+>
+> * [My contacts: ->]( https://mehal.my.canva.site/)  
+> * [More information about me: ->](https://sites.google.com/view/zivotopis-miu)  
+> * [My Github: ->](https://github.com/MIU-cz)  
+> * [My FaceBook: ->](https://www.facebook.com/mehaligor.cz/)
