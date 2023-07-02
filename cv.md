@@ -4,6 +4,7 @@
 
 ## **Contacts**
 
+| ico | type | description |
 | ------ | ------------- | -------------------------- |
 | U+F3E7 | **Location:** | Czech republic |
 | U+F4E2 | **Phone:** | +420 723 854 208 |
