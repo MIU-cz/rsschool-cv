@@ -1,28 +1,37 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital@1&family=Ubuntu:wght@400;700&display=swap");
+@import url("../css/normaliz-style-min.css");
 
 // # FONTS
-$ff-Poppons: "Poppins", sans-serif;
+$ff-Poppins: "Poppins", sans-serif;
 $ff-Ubuntu: "Ubuntu", sans-serif;
+
 $fw-400: 400;
 $fw-700: 700;
+
 $fs-body: 16px;
 $fs-header: $fs-body * 2.5;
+$fs-title: $fs-body * 1.5;
 
 // # COLOR THEME
-
 $color-aside: #012e40;
-$color-header: #025159;
+$color-main: #025159;
 $color-text: #038c8c;
 $color-links: #03a696;
 $color-hover: #f28705;
+$color-wite: #ffffff;
 
 // # VARIABLES
 $max-width: 1440px;
+$gap: 20px;
 
+// ### BASE BODY STYLES
+// ###############################
 body {
 	font-family: $ff-Ubuntu;
 	font-weight: $fw-400;
 	font-size: $fs-body;
+	letter-spacing: 1.25px;
+	color: $color-main;
 
 	h1 {
 		font-size: $fs-header;
@@ -38,9 +47,127 @@ body {
 		width: 100%;
 		height: 100%;
 		z-index: -1000;
-		opacity: 0.3;
+		opacity: 0.5;
 		background-image: url(../img/bg-cover-green.webp);
 		background-size: cover;
 		background-repeat: no-repeat;
+	}
+}
+
+.container_wrap {
+	max-width: $max-width;
+	margin: 0 auto;
+}
+
+.wrap_grid {
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	grid-auto-flow: row;
+	gap: 0;
+}
+
+.aside {
+	width: 100%;
+	padding: $gap;
+	background-color: $color-aside;
+}
+
+.section {
+	width: 100%;
+	padding: $gap;
+	background-color: $color-wite;
+}
+
+// ### HEADER SECTION STYLES
+// ###############################
+.header {
+}
+
+.autor_foto {
+	width: 100%;
+
+	img {
+		width: 100%;
+		margin: 0 auto;
+
+		border: solid 5px $color-main;
+		border-radius: 50%;
+	}
+}
+
+.autor__container {
+	width: 100%;
+	height: 100%;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+	text-align: right;
+
+	.autor_name {
+		font-size: $fs-header * 1.5;
+		text-transform: uppercase;
+	}
+
+	.autor_description {
+		margin-top: $gap;
+		font-size: $fs-title;
+		text-transform: uppercase;
+		font-weight: $fw-700;
+	}
+
+	.autor_links {
+		margin-top: $gap;
+
+		display: flex;
+		flex-direction: row;
+		justify-content: end;
+		gap: $gap * 2;
+
+		li {
+			display: inline-block;
+			font-size: $fs-header;
+
+			i {
+				color: $color-main;
+			}
+
+			a > i:hover {
+				color: $color-hover;
+			}
+		}
+	}
+}
+
+.navbar {
+}
+
+// ### MAIN SECTION STYLES
+// ###############################
+
+// ### FOOTER SECTION STYLES
+// ###############################
+.footer {
+	background-color: $color-aside;
+}
+
+.footer__container {
+	width: 100%;
+	padding: $gap;
+
+	* {
+		font-size: $fs-header * 1.5;
+		color: $color-links;
+	}
+}
+
+.rsschool {
+	object {
+		height: 85px;
+
+		svg {
+			fill: $color-links;
+		}
 	}
 }
