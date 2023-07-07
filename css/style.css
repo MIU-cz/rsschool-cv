@@ -7,7 +7,8 @@ body {
   letter-spacing: 1.25px;
   color: #025159;
 }
-body h1 {
+body h1,
+body h2 {
   font-size: 40px;
   font-weight: 700;
 }
@@ -40,18 +41,27 @@ body:before {
 
 .aside {
   width: 100%;
-  padding: 20px;
   background-color: #012e40;
 }
 
 .section {
   width: 100%;
-  padding: 20px;
   background-color: #ffffff;
+}
+
+.header aside {
+  height: 100%;
+}
+.header section {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .autor_foto {
   width: 100%;
+  padding: 20px;
 }
 .autor_foto img {
   width: 100%;
@@ -62,7 +72,8 @@ body:before {
 
 .autor__container {
   width: 100%;
-  height: 100%;
+  margin-top: 100px;
+  padding: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -96,6 +107,92 @@ body:before {
   color: #f28705;
 }
 
+.navbar {
+  width: 100%;
+  height: 100px;
+  padding: 20px;
+  background: linear-gradient(to right, #012e40 5%, #ffffff);
+}
+
+.navbar_links {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 5px;
+}
+.navbar_links li {
+  display: inline-block;
+  padding: 5px;
+  padding-right: 10px;
+  border-right: solid 1px #03a696;
+}
+.navbar_links li:last-child {
+  border: 0;
+}
+.navbar_links a {
+  font-size: 20px;
+  font-weight: 700;
+  color: #03a696;
+}
+.navbar_links a:hover {
+  color: #f28705;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+
+.main .aside,
+.main .section {
+  padding: 40px 0 20px;
+}
+.main * {
+  color: #038c8c;
+}
+
+.aside__title {
+  width: 100%;
+  padding: 20px;
+  background: linear-gradient(to right, #f28705 70%, #012e40);
+}
+.aside__title h2 {
+  color: #ffffff;
+}
+.aside__items {
+  padding: 20px;
+  font-size: 24px;
+}
+.aside__items li {
+  display: block;
+  margin-top: 20px;
+}
+.aside__items a:hover {
+  color: #f28705;
+}
+
+.section__title {
+  width: 100%;
+  padding: 20px;
+  text-align: right;
+}
+.section__text {
+  padding: 40px;
+  font-size: 24px;
+}
+.section__text p {
+  padding-top: 20px;
+}
+.section__slogan {
+  padding: 40px;
+  background-color: rgba(1, 46, 64, 0.1);
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #025159;
+  text-align: right;
+}
+
 .footer {
   background-color: #012e40;
 }
@@ -103,14 +200,35 @@ body:before {
 .footer__container {
   width: 100%;
   padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 .footer__container * {
-  font-size: 60px;
+  font-size: 40px;
   color: #03a696;
 }
+.footer__container .autor_links {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  gap: 40px;
+}
+.footer__container .autor_links li {
+  display: inline-block;
+}
+.footer__container .autor_links li a > i:hover {
+  color: #f28705;
+}
 
+.rsschool a {
+  display: block;
+  width: auto;
+}
 .rsschool object {
-  height: 85px;
+  height: 45px;
+  pointer-events: none;
 }
 .rsschool object svg {
   fill: #03a696;

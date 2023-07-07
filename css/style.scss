@@ -11,6 +11,7 @@ $fw-700: 700;
 $fs-body: 16px;
 $fs-header: $fs-body * 2.5;
 $fs-title: $fs-body * 1.5;
+$fs-nav-links: 20px;
 
 // # COLOR THEME
 $color-aside: #012e40;
@@ -33,7 +34,8 @@ body {
 	letter-spacing: 1.25px;
 	color: $color-main;
 
-	h1 {
+	h1,
+	h2 {
 		font-size: $fs-header;
 		font-weight: $fw-700;
 	}
@@ -68,23 +70,33 @@ body {
 
 .aside {
 	width: 100%;
-	padding: $gap;
 	background-color: $color-aside;
 }
 
 .section {
 	width: 100%;
-	padding: $gap;
 	background-color: $color-wite;
 }
 
 // ### HEADER SECTION STYLES
 // ###############################
 .header {
+	aside {
+		height: 100%;
+	}
+
+	section {
+		height: 100%;
+
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
 }
 
 .autor_foto {
 	width: 100%;
+	padding: $gap;
 
 	img {
 		width: 100%;
@@ -97,7 +109,8 @@ body {
 
 .autor__container {
 	width: 100%;
-	height: 100%;
+	margin-top: $gap * 5;
+	padding: $gap;
 
 	display: flex;
 	flex-direction: column;
@@ -141,10 +154,113 @@ body {
 }
 
 .navbar {
+	width: 100%;
+	height: 100px;
+	padding: $gap;
+	background: linear-gradient(to right, $color-aside 5%, $color-wite);
+}
+
+.navbar_links {
+	width: 100%;
+	height: 100%;
+
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	gap: 5px;
+
+	li {
+		display: inline-block;
+		padding: 5px;
+		padding-right: 10px;
+
+		border-right: solid 1px $color-links;
+
+		&:last-child {
+			border: 0;
+		}
+	}
+
+	a {
+		font-size: $fs-nav-links;
+		font-weight: $fw-700;
+		color: $color-links;
+
+		&:hover {
+			color: $color-hover;
+			text-decoration: underline;
+			text-transform: uppercase;
+		}
+	}
 }
 
 // ### MAIN SECTION STYLES
 // ###############################
+.main {
+	.aside,
+	.section {
+		padding: $gap * 2 0 $gap;
+	}
+
+	& * {
+		color: $color-text;
+	}
+}
+
+.aside {
+	&__title {
+		width: 100%;
+		padding: $gap;
+		background: linear-gradient(to right, $color-hover 70%, $color-aside);
+
+		h2 {
+			color: $color-wite;
+		}
+	}
+
+	&__items {
+		padding: $gap;
+		font-size: $fs-title;
+
+		li {
+			display: block;
+			margin-top: $gap;
+		}
+
+		a:hover {
+			color: $color-hover;
+		}
+	}
+}
+
+.section {
+	&__title {
+		width: 100%;
+		padding: $gap;
+		text-align: right;
+	}
+
+	&__text {
+		padding: $gap * 2;
+		font-size: $fs-title;
+
+		p {
+			padding-top: $gap;
+		}
+	}
+
+	&__slogan {
+		padding: $gap * 2;
+		background-color: transparentize($color: $color-aside, $amount: 0.9);
+
+		font-family: $ff-Poppins;
+		font-size: $fs-title;
+		font-weight: $fw-700;
+		color: $color-main;
+		text-align: right;
+	}
+}
 
 // ### FOOTER SECTION STYLES
 // ###############################
@@ -156,15 +272,41 @@ body {
 	width: 100%;
 	padding: $gap;
 
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+
 	* {
-		font-size: $fs-header * 1.5;
+		font-size: $fs-header;
 		color: $color-links;
+	}
+
+	.autor_links {
+		display: flex;
+		flex-direction: row;
+		justify-content: end;
+		gap: $gap * 2;
+
+		li {
+			display: inline-block;
+
+			a > i:hover {
+				color: $color-hover;
+			}
+		}
 	}
 }
 
 .rsschool {
+	a {
+		display: block;
+		width: auto;
+	}
+
 	object {
-		height: 85px;
+		height: 45px;
+		pointer-events: none;
 
 		svg {
 			fill: $color-links;
