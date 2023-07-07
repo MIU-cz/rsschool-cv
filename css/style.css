@@ -145,19 +145,24 @@ body:before {
 
 .main .aside,
 .main .section {
-  padding: 40px 0 20px;
+  padding: 40px 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-flow: row;
+  gap: 40px;
 }
 .main * {
   color: #038c8c;
 }
 
+.aside h2,
+.aside h3 {
+  color: #ffffff;
+}
 .aside__title {
   width: 100%;
   padding: 20px;
   background: linear-gradient(to right, #f28705 70%, #012e40);
-}
-.aside__title h2 {
-  color: #ffffff;
 }
 .aside__items {
   padding: 20px;
@@ -171,6 +176,39 @@ body:before {
   color: #f28705;
 }
 
+.aside_thumb {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding-top: 40px;
+}
+.aside_thumb .thumb_item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+.aside_thumb .thumb_item object {
+  width: 75px;
+  height: 75px;
+}
+
+.thumb_title {
+  width: 100%;
+  margin-top: 20px;
+  text-align: center;
+}
+.thumb_title h3 {
+  font-size: 24px;
+}
+
+.languages li {
+  font-family: "Poppins", sans-serif;
+}
+.languages li::before {
+  content: ">> ";
+}
+
 .section__title {
   width: 100%;
   padding: 20px;
@@ -181,7 +219,7 @@ body:before {
   font-size: 24px;
 }
 .section__text p {
-  padding-top: 20px;
+  margin-top: 20px;
 }
 .section__slogan {
   padding: 40px;
