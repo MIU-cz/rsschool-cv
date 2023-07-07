@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital@1&family=Ubuntu:wght@400;700&display=swap");
+body {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+body h1 {
+  font-size: 40px;
+  font-weight: 700;
+}
+body:before {
+  content: " ";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1000;
+  opacity: 0.3;
+  background-image: url(../img/bg-cover-green.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+}/*# sourceMappingURL=style.css.map */
