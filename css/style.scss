@@ -27,6 +27,13 @@ $gap: 20px;
 
 // ### BASE BODY STYLES
 // ###############################
+* {
+	font-size: initial;
+
+	@media (min-width: 375px) {
+		font-size: inherit;
+	}
+}
 
 body {
 	font-family: $ff-Ubuntu;
@@ -62,15 +69,27 @@ body {
 }
 
 .container_wrap {
-	max-width: $max-width;
+	max-width: 100%;
 	margin: 0 auto;
+
+	@media (min-width: 768px) {
+		max-width: 95%;
+	}
+
+	@media (min-width: 1440px) {
+		max-width: $max-width;
+	}
 }
 
 .wrap_grid {
 	display: grid;
-	grid-template-columns: 1fr 2fr;
+	grid-template-columns: 1fr;
 	grid-auto-flow: row;
 	gap: 0;
+
+	@media (min-width: 1140px) {
+		grid-template-columns: 1fr 2fr;
+	}
 }
 
 .aside {
@@ -124,8 +143,12 @@ body {
 	text-align: right;
 
 	.autor_name {
-		font-size: $fs-header * 1.5;
+		font-size: $fs-header;
 		text-transform: uppercase;
+
+		@media (min-width: 576px) {
+			font-size: $fs-header * 1.5;
+		}
 	}
 
 	.autor_description {
@@ -160,9 +183,13 @@ body {
 
 .navbar {
 	width: 100%;
-	height: 100px;
+	height: auto;
 	padding: $gap;
 	background: linear-gradient(to right, $color-aside, $color-main);
+
+	@media (min-width: 992px) {
+		height: 100px;
+	}
 }
 
 .navbar_links {
@@ -370,14 +397,35 @@ body {
 		padding: $gap;
 
 		display: grid;
-		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-columns: 1fr;
 		grid-auto-flow: row;
 		gap: $gap * 2;
 		justify-content: center;
+
+		@media (min-width: 1200px) {
+			grid-template-columns: 1fr 1fr 1fr;
+		}
+	}
+}
+
+.section__code {
+	padding: 0;
+	font-size: initial;
+
+	@media (min-width: 992px) {
+		padding: $gap;
+		font-size: inherit;
+	}
+
+	@media (min-width: 1200px) {
+		padding: $gap * 2;
 	}
 }
 
 pre {
+	max-width: 100%;
+	overflow: auto;
+
 	border-radius: 0 100px 0 100px;
 	background-color: transparentize($color: $color-hover, $amount: 0.9);
 
@@ -385,7 +433,12 @@ pre {
 	justify-content: center;
 
 	code {
-		display: block;
+		width: 100%;
+		overflow: auto;
+		padding: $gap;
+
+		display: flex;
+		justify-content: center;
 	}
 }
 
@@ -488,9 +541,15 @@ pre {
 	padding: $gap;
 
 	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
+	flex-direction: column;
+	justify-content: center;
 	align-items: center;
+	gap: $gap * 2;
+
+	@media (min-width: 768px) {
+		flex-direction: row;
+		justify-content: space-between;
+	}
 
 	* {
 		font-size: $fs-header;

@@ -1,5 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital@1&family=Ubuntu:wght@400;700&display=swap");
 @import url("../css/normaliz-style-min.css");
+* {
+  font-size: initial;
+}
+@media (min-width: 375px) {
+  * {
+    font-size: inherit;
+  }
+}
+
 body {
   font-family: "Ubuntu", sans-serif;
   font-weight: 400;
@@ -15,15 +24,30 @@ body h2 {
 }
 
 .container_wrap {
-  max-width: 1440px;
+  max-width: 100%;
   margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .container_wrap {
+    max-width: 95%;
+  }
+}
+@media (min-width: 1440px) {
+  .container_wrap {
+    max-width: 1440px;
+  }
 }
 
 .wrap_grid {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr;
   grid-auto-flow: row;
   gap: 0;
+}
+@media (min-width: 1140px) {
+  .wrap_grid {
+    grid-template-columns: 1fr 2fr;
+  }
 }
 
 .aside {
@@ -67,8 +91,13 @@ body h2 {
   text-align: right;
 }
 .autor__container .autor_name {
-  font-size: 60px;
+  font-size: 40px;
   text-transform: uppercase;
+}
+@media (min-width: 576px) {
+  .autor__container .autor_name {
+    font-size: 60px;
+  }
 }
 .autor__container .autor_description {
   margin-top: 20px;
@@ -96,9 +125,14 @@ body h2 {
 
 .navbar {
   width: 100%;
-  height: 100px;
+  height: auto;
   padding: 20px;
   background: linear-gradient(to right, #012e40, #025159);
+}
+@media (min-width: 992px) {
+  .navbar {
+    height: 100px;
+  }
 }
 
 .navbar_links {
@@ -262,20 +296,47 @@ body h2 {
   margin-top: 40px;
   padding: 20px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
   grid-auto-flow: row;
   gap: 40px;
   justify-content: center;
 }
+@media (min-width: 1200px) {
+  .section__latestWork {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.section__code {
+  padding: 0;
+  font-size: initial;
+}
+@media (min-width: 992px) {
+  .section__code {
+    padding: 20px;
+    font-size: inherit;
+  }
+}
+@media (min-width: 1200px) {
+  .section__code {
+    padding: 40px;
+  }
+}
 
 pre {
+  max-width: 100%;
+  overflow: auto;
   border-radius: 0 100px 0 100px;
   background-color: rgba(242, 135, 5, 0.1);
   display: flex;
   justify-content: center;
 }
 pre code {
-  display: block;
+  width: 100%;
+  overflow: auto;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
 }
 
 .latestWork_item {
@@ -357,9 +418,16 @@ pre code {
   width: 100%;
   padding: 20px;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
+  gap: 40px;
+}
+@media (min-width: 768px) {
+  .footer__container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 .footer__container * {
   font-size: 40px;
