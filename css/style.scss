@@ -27,6 +27,7 @@ $gap: 20px;
 
 // ### BASE BODY STYLES
 // ###############################
+
 body {
 	font-family: $ff-Ubuntu;
 	font-weight: $fw-400;
@@ -34,26 +35,30 @@ body {
 	letter-spacing: 1.25px;
 	color: $color-main;
 
+	background-color: transparentize($color: $color-main, $amount: 0.7);
+
 	h1,
 	h2 {
 		font-size: $fs-header;
 		font-weight: $fw-700;
 	}
 
-	&:before {
-		content: " ";
-		display: block;
-		position: absolute;
-		left: 0;
-		top: 0;
-		width: 100%;
-		height: 100%;
-		z-index: -1000;
-		opacity: 0.3;
-		background-image: url(../img/bg-cover-green.webp);
-		background-size: contain;
-		background-repeat: no-repeat;
-	}
+	// position: relative;
+	// &:before {
+	// 	content: " ";
+	// 	display: block;
+	// 	position: absolute;
+	// 	left: 0;
+	// 	top: 0;
+	// 	width: 100%;
+	// 	height: 100%;
+	// 	z-index: -1000;
+	// 	opacity: 0.3;
+	// 	background-image: url(../img/bg-cover-green.webp);
+	// 	background-size: contain;
+	// background-repeat: repeat-y;
+	// background-repeat: no-repeat;
+	// }
 }
 
 .container_wrap {
@@ -157,7 +162,7 @@ body {
 	width: 100%;
 	height: 100px;
 	padding: $gap;
-	background: linear-gradient(to right, $color-aside 5%, $color-wite);
+	background: linear-gradient(to right, $color-aside, $color-main);
 }
 
 .navbar_links {
@@ -172,7 +177,7 @@ body {
 
 	li {
 		display: inline-block;
-		padding: 5px;
+		// padding: 5px;
 		padding-right: 10px;
 
 		border-right: solid 1px $color-links;
@@ -198,7 +203,14 @@ body {
 // ### MAIN SECTION STYLES
 // ###############################
 .main {
-	.aside,
+	.aside {
+		padding: $gap * 2 0;
+
+		display: flex;
+		flex-direction: column;
+		gap: $gap * 3;
+	}
+
 	.section {
 		padding: $gap * 2 0;
 
@@ -267,6 +279,15 @@ body {
 
 	h3 {
 		font-size: $fs-title;
+
+		&::after {
+			content: " ";
+			display: block;
+			width: 70%;
+			height: 2px;
+			margin: $gap auto 0;
+			background-color: transparentize($color: $color-hover, $amount: 0.7);
+		}
 	}
 }
 
@@ -286,6 +307,36 @@ body {
 		width: 100%;
 		padding: $gap;
 		text-align: right;
+
+		h2 {
+			&::after {
+				content: " ";
+				display: block;
+				width: 70%;
+				height: 2px;
+				margin: $gap - 10px 0 0 auto;
+				background-color: transparentize($color: $color-aside, $amount: 0.7);
+			}
+		}
+
+		h3 {
+			margin-top: $gap * 3;
+
+			font-family: $ff-Poppins;
+			font-size: $fs-title;
+			font-weight: $fw-700;
+			text-align: center;
+			text-transform: uppercase;
+
+			&::after {
+				content: " ";
+				display: block;
+				width: 70%;
+				height: 2px;
+				margin: $gap auto 0;
+				background-color: transparentize($color: $color-aside, $amount: 0.7);
+			}
+		}
 	}
 
 	&__text {

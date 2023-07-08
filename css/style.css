@@ -6,25 +6,12 @@ body {
   font-size: 16px;
   letter-spacing: 1.25px;
   color: #025159;
+  background-color: rgba(2, 81, 89, 0.3);
 }
 body h1,
 body h2 {
   font-size: 40px;
   font-weight: 700;
-}
-body:before {
-  content: " ";
-  display: block;
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1000;
-  opacity: 0.3;
-  background-image: url(../img/bg-cover-green.webp);
-  background-size: auto;
-  /* background-repeat: no-repeat; */
 }
 
 .container_wrap {
@@ -111,7 +98,7 @@ body:before {
   width: 100%;
   height: 100px;
   padding: 20px;
-  background: linear-gradient(to right, #012e40 5%, #ffffff);
+  background: linear-gradient(to right, #012e40, #025159);
 }
 
 .navbar_links {
@@ -125,7 +112,6 @@ body:before {
 }
 .navbar_links li {
   display: inline-block;
-  padding: 5px;
   padding-right: 10px;
   border-right: solid 1px #03a696;
 }
@@ -143,7 +129,12 @@ body:before {
   text-transform: uppercase;
 }
 
-.main .aside,
+.main .aside {
+  padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
 .main .section {
   padding: 40px 0;
   display: grid;
@@ -201,6 +192,14 @@ body:before {
 .thumb_title h3 {
   font-size: 24px;
 }
+.thumb_title h3::after {
+  content: " ";
+  display: block;
+  width: 70%;
+  height: 2px;
+  margin: 20px auto 0;
+  background-color: rgba(242, 135, 5, 0.3);
+}
 
 .languages li {
   font-family: "Poppins", sans-serif;
@@ -213,6 +212,30 @@ body:before {
   width: 100%;
   padding: 20px;
   text-align: right;
+}
+.section__title h2::after {
+  content: " ";
+  display: block;
+  width: 70%;
+  height: 2px;
+  margin: 10px 0 0 auto;
+  background-color: rgba(1, 46, 64, 0.3);
+}
+.section__title h3 {
+  margin-top: 60px;
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+.section__title h3::after {
+  content: " ";
+  display: block;
+  width: 70%;
+  height: 2px;
+  margin: 20px auto 0;
+  background-color: rgba(1, 46, 64, 0.3);
 }
 .section__text {
   padding: 40px;
