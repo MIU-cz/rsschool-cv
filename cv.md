@@ -17,52 +17,39 @@
 ## About me
 
 <details>
-<summary>A few words about me..</summary>
-<pre>
-        Successful experience in the business field in management positions for more than 20 years, as well as experience in organizing sales in complex markets with aggressive competition, complex decision-making structures and long transaction terms.
-        >> this allows me to freely navigate when solving business problems, easily understand the assigned tasks and interpret them to develop software products.
-
-        Experience in building long-term partnerships.
-        >> I understand the way of thinking and the psychology of decision-making of the Partner/Client/Customer. I determine the correct “chain of clients” - decision makers (DMs) and persons influencing decision making (DIP).
-
-        I have a higher technical education with a degree in Software Engineer.
+    <summary>A few words about me..</summary>
+        <p>Successful experience in the business field in management positions for more than 20 years, as well as experience in organizing sales in complex markets with aggressive competition, complex decision-making structures and long transaction terms.<br>
+        >> this allows me to freely navigate when solving business problems, easily understand the assigned tasks and interpret them to develop software products.</p>
+        <p>Experience in building long-term partnerships. <br>
+        >> I understand the way of thinking and the psychology of decision-making of the Partner/Client/Customer. I determine the correct “chain of clients” - decision makers (DMs) and persons influencing decision making (DIP).</p>
+        <p>I have a higher technical education with a degree in Software Engineer.
         Additionally, I studied at the STEP Computer Academy.
-        As a thesis, I developed an online store of electronic goods and a forum for students.
-        In both projects I used:
-        FrontEnd - HTML, CSS, JavaScript, PHP; BackEnd - HTML, CSS, JavaScript, PHP, MySQL
-        I defended my thesis with “excellent” marks.
-
-        I have skills in Internet development, FrontEnd, BackEnd, FullStack. HTML, CSS, JS.
-        I work with BPM, Figma, Git. And also, Adobe Photoshop, Adobe Muse, Canva, Tilda, MS PowerPoint presentations, Google tools and others.
-        
-        I have experience in building automation, smart home, based on Crestron processors, I was trained and received a certificate as a control interface programmer.
-        The interface was programmed using a stripped-down C language and a visual designer. This solution is very similar to VS WPF or another IDE.
-
-        I have a fairly flexible logical thinking, which allows me to be ready to master all the stacks and frameworks necessary for work in a short time.
-
-        IT project management experience:
-        - implementation of CRM systems,
-        - development of company websites,
-        - landing pages with selling features.
-        
-        Hired and supervised the work of third-party performers, designers, and programmers.
+        As a thesis, I developed an online store of electronic goods and a forum for students. <br>
+        In both projects I used: <br>
+        FrontEnd - HTML, CSS, JavaScript, PHP; <br>
+        BackEnd - HTML, CSS, JavaScript, PHP, MySQL <br>
+        I defended my thesis with “excellent” marks.</p>
+        <p>I have skills in Internet development, FrontEnd, BackEnd, FullStack. HTML, CSS, JS.
+        I work with BPM, Figma, Git. And also, Adobe Photoshop, Adobe Muse, Canva, Tilda, MS PowerPoint presentations, Google tools and others.</p>        
+        <p>I have experience in building automation, smart home, based on Crestron processors, I was trained and received a certificate as a control interface programmer.
+        The interface was programmed using a stripped-down C language and a visual designer. This solution is very similar to VS WPF or another IDE.</p>
+        <p>I have a fairly flexible logical thinking, which allows me to be ready to master all the stacks and frameworks necessary for work in a short time.</p>
+        <p>IT project management experience:<br>
+        - implementation of CRM systems,<br>
+        - development of company websites,<br>
+        - landing pages with selling features.</p>        
+        <p>Hired and supervised the work of third-party performers, designers, and programmers.
         I am proficient in prototyping tools.
-        I know the methodology Agile, Scrum, Kanban, Waterfall.
-
-        Experience in managing complex projects. I competently formulate the structure of tasks, using basic and specialized tools that allow me to quickly and clearly control each phase of the project.
-        I am able to effectively organize and plan the work process.
-
-        Organization of a sales department from “0”. Experience in bringing new products to market. Development of road maps. Successful experience in creating a small business from “0”. Organization of subsidiaries, branches, and representative offices abroad.
-
-        I am able to set the right tasks in accordance with the goals and mission of the company, monitor their implementation and achieve effective results. I understand and can apply in practice the principles of functioning of manufacturing enterprises and companies in the service sector. Experience in construction project management. Reading working drawings.
-
-        November 2021 – January 2022 – expert at the NRNU MEPhI Engineer Competition.
-        Objectives - Professional assessment of diploma qualification works in the field of science, business and industry.
-
-        I'm not afraid of work, I immerse myself in the process. 
-        Ready for business trips.
-        Always ready to improve the level of professionalism and acquire new knowledge and skills.
-</pre>
+        I know the methodology Agile, Scrum, Kanban, Waterfall.</p>
+        <p>Experience in managing complex projects. I competently formulate the structure of tasks, using basic and specialized tools that allow me to quickly and clearly control each phase of the project.
+        I am able to effectively organize and plan the work process.</p>
+        <p>Organization of a sales department from “0”. Experience in bringing new products to market. Development of road maps. Successful experience in creating a small business from “0”. Organization of subsidiaries, branches, and representative offices abroad.</p>
+        <p>I am able to set the right tasks in accordance with the goals and mission of the company, monitor their implementation and achieve effective results. I understand and can apply in practice the principles of functioning of manufacturing enterprises and companies in the service sector. Experience in construction project management. Reading working drawings.</p>
+        <p>November 2021 – January 2022 – expert at the NRNU MEPhI Engineer Competition.
+        Objectives - Professional assessment of diploma qualification works in the field of science, business and industry.</p>
+        <p>I'm not afraid of work, I immerse myself in the process. <br>
+        Ready for business trips.<br>
+        Always ready to improve the level of professionalism and acquire new knowledge and skills.</p>
 </details>
 
 ## Code example
