@@ -14,10 +14,13 @@
 [![Facebook](https://img.shields.io/badge/Facebook-%231877F2.svg?style=for-the-badge&logo=Facebook&logoColor=white)][Facebook]
 [![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)][Github]
 
-## About me
+[![RS-profile](https://img.shields.io/badge/my_RS_School-Profile-orange)][rsschool]
+
+## 😉 About me
 
 <details>
     <summary>A few words about me..</summary>
+        <br>
         <p>Successful experience in the business field in management positions for more than 20 years, as well as experience in organizing sales in complex markets with aggressive competition, complex decision-making structures and long transaction terms.<br>
         >> this allows me to freely navigate when solving business problems, easily understand the assigned tasks and interpret them to develop software products.</p>
         <p>Experience in building long-term partnerships. <br>
@@ -52,7 +55,15 @@
         Always ready to improve the level of professionalism and acquire new knowledge and skills.</p>
 </details>
 
-## Code example
+### 🔊 Languages
+
+    - English - A2, reading technical literature, communication
+    - Czech - B1, currently studying
+    - Russian- freely
+    - Ukrainian- freely
+
+
+## 📔 Code example
 
 ```js
 const MIU = {
@@ -90,10 +101,13 @@ MIU.addSkills(newFramework);
 MIU.doIt(runAction);
 ```
 
+<img alighn="center" alt="Top Langs" src="https://github-readme-stats.vercel.app/api/top-langs/?username=MIU-cz&theme=dark&layout=compact">
+
 ## 🧑‍🎓 EDUCATION
 
 <details>
     <summary>🏦 High school</summary>
+    <br>
         <table>
         <tr>
             <td>
@@ -167,6 +181,7 @@ MIU.doIt(runAction);
 
 <details>
     <summary>🏫 Courses and trainings</summary>
+    <br>
         <ul>
             <li>RS School EPAM - JS/Front-end</li>
             <li>IT STEP - Computer graphics and Internet technologies</li>
@@ -189,6 +204,7 @@ MIU.doIt(runAction);
 
 <details>
     <summary>20 years of management experience</summary>
+    <br>
     <ul>
     <li>BDO - MILITON
     2022 <br>
@@ -230,8 +246,14 @@ MIU.doIt(runAction);
     </ul>
 </details>
 
+## 📊 Some stats
+
+<img alt="MIU-stats" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=MIU-cz&theme=solarized_dark">
+<img alt="MIU-stats" src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=MIU-cz&theme=solarized_dark">
+
 <!-- --- --- --- -->
 <!-- ### links -->
 [github]: https://github.com/MIU-cz
 [linkedin]: https://www.linkedin.com/in/miu-cz
 [Facebook]: https://www.facebook.com/mehaligor.cz
+[rsschool]: https://app.rs.school/profile?githubId=miu-cz
