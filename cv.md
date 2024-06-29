@@ -17,8 +17,8 @@
 ## About me
 
 <details>
-    <summary>A few words about me..</summary>
-
+<summary>A few words about me..</summary>
+<pre>
         Successful experience in the business field in management positions for more than 20 years, as well as experience in organizing sales in complex markets with aggressive competition, complex decision-making structures and long transaction terms.
         >> this allows me to freely navigate when solving business problems, easily understand the assigned tasks and interpret them to develop software products.
 
@@ -41,9 +41,9 @@
         I have a fairly flexible logical thinking, which allows me to be ready to master all the stacks and frameworks necessary for work in a short time.
 
         IT project management experience:
-         - implementation of CRM systems,
-         - development of company websites,
-         - landing pages with selling features.
+        - implementation of CRM systems,
+        - development of company websites,
+        - landing pages with selling features.
         
         Hired and supervised the work of third-party performers, designers, and programmers.
         I am proficient in prototyping tools.
@@ -62,7 +62,7 @@
         I'm not afraid of work, I immerse myself in the process. 
         Ready for business trips.
         Always ready to improve the level of professionalism and acquire new knowledge and skills.
-
+</pre>
 </details>
 
 ## Code example
