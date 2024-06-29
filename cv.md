@@ -91,65 +91,67 @@
 
 <details>
     <summary>🏫 Courses and trainings</summary>
-
-        RS School EPAM - JS/Front-end
-        IT STEP - Computer graphics and Internet technologies
-        Yandex - Project Manager
-        Stepik - Project Manager
-        Stepik -PHP, MySQL - basics
-        Stepik- WEB Technology. FE
-        Nettology - Front-end/JS
-        Stepik -C# - Basics
-        CBS - Management skills. Effective Solutions
-        CBS - Time management. Delegation of powers
-        CBS - Effective communications. media technologies. GR
-        CBS - Social Psychology and Behavioral Analysis
-        CBS - Stress management. Conflict Management
-        CBS - Business Etiquette. Business meeting
+        <ul>
+            <li>RS School EPAM - JS/Front-end</li>
+            <li>IT STEP - Computer graphics and Internet technologies</li>
+            <li>Yandex - Project Manager</li>
+            <li>Stepik - Project Manager</li>
+            <li>Stepik -PHP, MySQL - basics</li>
+            <li>Stepik- WEB Technology. FE</li>
+            <li>Nettology - Front-end/JS</li>
+            <li>Stepik -C# - Basics</li>
+            <li>CBS - Management skills. Effective Solutions</li>
+            <li>CBS - Time management. Delegation of powers</li>
+            <li>CBS - Effective communications. media technologies. GR</li>
+            <li>CBS - Social Psychology and Behavioral Analysis</li>
+            <li>CBS - Stress management. Conflict Management</li>
+            <li>CBS - Business Etiquette. Business meeting</li>
+        </ul>
 </details>
 
 ## 💼 WORK EXPERIENCE
 
 <details>
     <summary>20 years of management experience</summary>
-
-    BDO - MILITON
-    2022 
+    <ul>
+    <li>BDO - MILITON
+    2022 <br>
     Construction. Engineering technology
     Projection, production, sale and installation of water supply, sewage, heating, ventilation and air conditioning systems, high current and low current systems
-
-    CBDO - LPK 
-    2020 - 2022
+    </li>
+    <li>CBDO - LPK 
+    2020 - 2022<br>
     Production of house kits using the Massive Holz Mauer technology, Glued laminated timber, molded wood products, additionally - sale of woodworking waste
-
-    CBDO - EBR-Group 
-    2019 - 2020
+    </li>
+    <li>CBDO - EBR-Group 
+    2019 - 2020<br>
     Organization of congress and exhibition events
     Rental of exhibition space, organization of events, design, engineering and construction of exhibition space, catering
-
-    CBDO - TEHPROM 
-    2018 - 2019
+    </li>
+    <li>CBDO - TEHPROM 
+    2018 - 2019<br>
     Production, sale and maintenance of cash registers
-
-    CBDO - SPETSTORGSNAB
-    2008 - 2018 
+    </li>
+    <li>CBDO - SPETSTORGSNAB
+    2008 - 2018 <br>
     Construction. Engineering equipment
     Design, manufacture, sale and installation of water supply systems, sewerage, heating, ventilation and air conditioning, power supply and low-voltage systems, Smart-Home
-
-    Project Manager - TECHNOENGINEERING 
-    2006 - 2008 
+    </li>
+    <li>Project Manager - TECHNOENGINEERING 
+    2006 - 2008 <br>
     Control systems. Audio, video, conference calls
     Design, wholesale and integration of a/c signal switching systems, smart home control systems, production process control systems
-
-    Sales Manager - Pridneprovsky Metallurgical Alliance 
-    2004 - 2006 
+    </li>
+    <li>Sales Manager - Pridneprovsky Metallurgical Alliance 
+    2004 - 2006 <br>
     Ferrous and non-ferrous metal rolling
     Collection, sorting and processing of ferrous and non-ferrous scrap metal
-
-    Sales Manager - NEFTEK 
-    2003 - 2004 
+    </li>
+    <li>Sales Manager - NEFTEK 
+    2003 - 2004 <br>
     Wholesale of light petroleum products - gasoline grade 92/95, diesel fuel
-
+    </li>
+    </ul>
 </details>
 
 <!-- --- --- --- -->
