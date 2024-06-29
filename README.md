@@ -1,2 +1,3 @@
 # rsschool-cv
-my school repo
+
+> my school repo
