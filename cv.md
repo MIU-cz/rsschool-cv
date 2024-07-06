@@ -1,4 +1,4 @@
-# ![Main Banner](src/miu-li-bg.jpg)
+# ![Main Banner](assets/img/miu-li-bg.jpg)
 
 ## Hello! 👋 <br> My name is Igor
 
