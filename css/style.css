@@ -292,12 +292,7 @@ h6 {
   }
 }
 
-.content_aside {
-  display: grid;
-  grid-auto-flow: row;
-  grid-template-columns: 1fr;
-}
-.content_section {
+.content_aside, .content_section {
   display: grid;
   grid-auto-flow: row;
   grid-template-columns: 1fr;

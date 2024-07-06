@@ -38,12 +38,7 @@
 }
 
 .content {
-	&_aside {
-		display: grid;
-		grid-auto-flow: row;
-		grid-template-columns: 1fr;
-	}
-
+	&_aside,
 	&_section {
 		display: grid;
 		grid-auto-flow: row;

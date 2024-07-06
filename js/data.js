@@ -2,21 +2,25 @@ const Data = {
 	autor: {
 		name: "Igor",
 		surname: "Mykhailenko",
+		spec: "Frontend developer",
 		skills: "https://skillicons.dev/icons?i=vscode,github,md,js,html,css,scss,php,mysql,bootstrap,figma,xd",
 	},
 	social: [
 		{
 			name: "Git-Hub",
+			ico: '<i class="bi bi-github">',
 			bage: "https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white",
 			link: "https://github.com/MIU-cz",
 		},
 		{
 			name: "LinkedIn",
+			ico: '<i class="bi bi-linkedin">',
 			bage: "https://img.shields.io/badge/linkedin-%230077B6.svg?style=for-the-badge&logo=linkedin&logoColor=white",
 			link: "https://www.linkedin.com/in/miu-cz",
 		},
 		{
 			name: "FaceBook",
+			ico: '<i class="bi bi-facebook">',
 			bage: "https://img.shields.io/badge/Facebook-%231877F2.svg?style=for-the-badge&logo=Facebook&logoColor=white",
 			link: "https://www.facebook.com/mehaligor.cz",
 		},
@@ -81,11 +85,45 @@ const Skills = {
 };
 
 const Education = {
+	icoSchool: "assets/svg/edu/education-hight.svg",
+	icoTraining: "assets/svg/edu/education-cert.svg",
+	icoStudent: "assets/svg/edu/education-student.svg",
 	school: [
 		{
-			name: "",
-			faculta: "",
-			specialization: "",
+			name: "VSB - Technical University of Ostrava",
+			faculta: "Faculty of Electrical Engineering and Computer Science",
+			specialization: "Master of Computer Science",
+			date: "Sep. 2023 - July 2026",
+		},
+		{
+			name: "National Mining University",
+			faculta: "Faculty of Computer Systems Software",
+			specialization: "Software Engineer. Bachelor. Junior engineer",
+			date: "2005",
+		},
+		{
+			name: "RANEPA",
+			faculta: "Project management",
+			specialization: "Business analyst",
+			date: "2022",
+		},
+		{
+			name: "State University of Management",
+			faculta: "Faculty of Entrepreneurship in the Social Sphere",
+			specialization: "Event-management. Fundraising as part of management",
+			date: "2008",
+		},
+		{
+			name: "National Mining University",
+			faculta: "Faculty of Economics",
+			specialization: "Bachelor of Foreign Trade. Management",
+			date: "2006",
+		},
+		{
+			name: 'ANO DPO "City Business School"',
+			faculta: "MBA General",
+			specialization: "Master of Business Administration",
+			date: "2022 - not finished",
 		},
 	],
 	training: [
@@ -104,6 +142,67 @@ const Education = {
 		"CBS - Stress management. Conflict Management",
 		"CBS - Business Etiquette. Business meeting",
 	],
+	stats: [
+		"https://github-readme-stats.vercel.app/api/top-langs/?username=MIU-cz&theme=dark&layout=compact",
+		"https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=MIU-cz&theme=solarized_dark",
+		"https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=MIU-cz&theme=solarized_dark",
+	],
 };
 
-const Work = {};
+const Work = {
+	icoBag: "assets/svg/edu/business-bag.svg",
+	icoMan: "assets/svg/edu/business-man.svg",
+	jobs: [
+		{
+			name: "",
+			date: "",
+			specialization: "",
+		},
+		{
+			name: "BDO - MILITON",
+			date: "2022",
+			specializacion:
+				"Construction. Engineering technology. Projection, production, sale and installation of water supply, sewage, heating, ventilation and air conditioning systems, high current and low current systems",
+		},
+		{
+			name: "CBDO - LPK",
+			date: "2020 - 2022",
+			specializacion:
+				"Production of house kits using the Massive Holz Mauer technology, Glued laminated timber, molded wood products, additionally - sale of woodworking waste",
+		},
+		{
+			name: "CBDO - EBR-Group",
+			date: "2019 - 2020",
+			specializacion:
+				"Organization of congress and exhibition events. Rental of exhibition space, organization of events, design, engineering and construction of exhibition space, catering",
+		},
+		{
+			name: "CBDO - TEHPROM",
+			date: "2018 - 2019",
+			specializacion: "Production, sale and maintenance of cash registers",
+		},
+		{
+			name: "CBDO - SPETSTORGSNAB",
+			date: "2008 - 2018",
+			specializacion:
+				"Construction. Engineering equipment. Design, manufacture, sale and installation of water supply systems, sewerage, heating, ventilation and air conditioning, power supply and low-voltage systems, Smart-Home",
+		},
+		{
+			name: "Project Manager - TECHNOENGINEERING",
+			date: "2006 - 2008",
+			specializacion:
+				"Control systems. Audio, video, conference calls. Design, wholesale and integration of a/c signal switching systems, smart home control systems, production process control systems",
+		},
+		{
+			name: "Sales Manager - Pridneprovsky Metallurgical Alliance",
+			date: "2004 - 2006",
+			specializacion:
+				"Ferrous and non-ferrous metal rolling. Collection, sorting and processing of ferrous and non-ferrous scrap metal",
+		},
+		{
+			name: "Sales Manager - NEFTEK",
+			date: "2003 - 2004",
+			specializacion: "Wholesale of light petroleum products - gasoline grade 92/95, diesel fuel",
+		},
+	],
+};
