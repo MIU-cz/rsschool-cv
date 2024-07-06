@@ -1,0 +1,321 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+/*Normalize styles*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  /* transition: all 0.3s ease 0.3s; */
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  line-height: 1.5;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+a,
+button {
+  cursor: pointer;
+}
+
+a,
+a:hover,
+a:visited {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*--------------------*/
+.poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.poppins-extralight {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppins-black {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.poppins-thin-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.poppins-extralight-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.poppins-light-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.poppins-regular-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.poppins-medium-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.poppins-semibold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.poppins-bold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.poppins-extrabold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.poppins-black-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.ubuntu-light {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.ubuntu-regular, .txt_quot, .txt_links, .txt_lists, .txt_headers, .txt_main_header, .txt_body {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.ubuntu-medium {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.ubuntu-bold {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.ubuntu-light-italic {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.ubuntu-regular-italic {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.ubuntu-medium-italic {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.ubuntu-bold-italic {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.txt_body {
+  font-size: 16px;
+  letter-spacing: 1.25px;
+  color: #038c8c;
+}
+
+.txt_main_header {
+  font-size: 40px;
+  letter-spacing: 1.25px;
+  color: #025159;
+}
+
+.txt_headers {
+  font-size: 24px;
+  letter-spacing: 1.25px;
+  color: #038c8c;
+}
+
+.txt_links, .txt_lists {
+  font-size: 20px;
+  letter-spacing: 1.25px;
+  color: #03a696;
+}
+
+.txt_lists {
+  letter-spacing: 1.3px;
+}
+
+.txt_quot {
+  font-size: 16px;
+  letter-spacing: 1.25px;
+  color: #012e40;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(2, 81, 89, 0.2);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 20px;
+  width: 1200px;
+  background-color: #ffffff;
+}
+.container_aside {
+  grid-column: span 4;
+  padding: 20px;
+  background-color: #012e40;
+}
+.container_section {
+  grid-column: span 8;
+  padding: 20px;
+}
+@media (width < 1240px) {
+  .container {
+    width: 100%;
+    grid-auto-flow: row;
+    grid-template-columns: 1fr;
+  }
+  .container > * {
+    grid-column: span 1;
+  }
+}
+
+.content_aside {
+  display: grid;
+  grid-auto-flow: row;
+  grid-template-columns: 1fr;
+}
+.content_section {
+  display: grid;
+  grid-auto-flow: row;
+  grid-template-columns: 1fr;
+}
+
+.autor {
+  display: flex;
+  margin: 0 auto;
+  border: 5px solid #025159;
+  border-radius: 50%;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.autor_foto {
+  width: 100%;
+  height: 100%;
+}/*# sourceMappingURL=style.css.map */

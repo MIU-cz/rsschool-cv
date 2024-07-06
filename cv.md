@@ -203,7 +203,7 @@ MIU.doIt(runAction);
 ## 💼 WORK EXPERIENCE
 
 <details>
-    <summary>20 years of management experience</summary>
+    <summary>more then 20 years of management & bizdev experience</summary>
     <br>
     <ul>
     <li>BDO - MILITON
