@@ -21,6 +21,20 @@ const Projects = [
 		description: "Order form & convert exchenge",
 	},
 	{
+		name: "Kalendar",
+		screen: "assets/img/screenshot/Kalendar.png",
+		solution: "https://github.com/MIU-cz/PHP-Work/tree/main/Kalendar",
+		deploy: "http://miu.jecool.net/new_sites/Kalendar/index.php",
+		description: "Kalendar & tasks",
+	},
+	{
+		name: "convert csv to mySQL",
+		screen: "assets/img/screenshot/MySql.png",
+		solution: "https://github.com/MIU-cz/PHP-Work/tree/main/3IT-php-test",
+		deploy: "http://miu.jecool.net/new_sites/3IT-php-test/index.php",
+		description: "add data to database & sort",
+	},
+	{
 		name: "VVM-ipso - v2 (php + js + scss)",
 		screen: "assets/img/screenshot/VVM-ipso.png",
 		solution: "https://github.com/MIU-cz/My_works/tree/master/marf-vvm-v2",
@@ -33,20 +47,6 @@ const Projects = [
 		solution: "https://github.com/MIU-cz/My_works/tree/master/marf-Tour",
 		deploy: "http://miu.jecool.net/new_sites/marf-Tour/",
 		description: "Test tour-page with admin concole + cocie + session",
-	},
-	{
-		name: "Kalendar",
-		screen: "assets/img/screenshot/Kalendar.png",
-		solution: "https://github.com/MIU-cz/PHP-Work/tree/main/Kalendar",
-		deploy: "http://miu.jecool.net/new_sites/Kalendar/index.php",
-		description: "Kalendar & tasks",
-	},
-	{
-		name: "convers csv to mySQL",
-		screen: "assets/img/screenshot/MySql.png",
-		solution: "https://github.com/MIU-cz/PHP-Work/tree/main/3IT-php-test",
-		deploy: "http://miu.jecool.net/new_sites/3IT-php-test/index.php",
-		description: "add data to database & sort",
 	},
 	{
 		name: "Age calculator app solution",

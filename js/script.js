@@ -80,7 +80,22 @@ for (let item of Work.jobs) {
 }
 
 // ##### PORTFOLIO
-
+const PortfolioBlock = document.querySelector(".portfolio_content");
+for (let item of Projects) {
+	PortfolioBlock.innerHTML += `
+		<div class="job_item">
+			<h5 class="job_title">${item.name}</h5>
+			<div class="img_wraper">
+				<img class="job_img" src="${item.screen}" alt="screenshot">
+				<p class="job_dsc">${item.description}</p>
+			</div>
+			<div class="links">
+				<a class="job_link" href="${item.solution}">solution</a>
+				<a class="job_link" href="${item.deploy}">deploy</a>
+			</div>
+		</div>
+	`;
+}
 
 // ### ASIDE
 // ==================

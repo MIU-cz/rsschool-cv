@@ -93,7 +93,7 @@ h6 {
 }
 
 .poppins-medium, td, .table_cap .table_title, .lang_item, .skills .subheaders, .contacts_item,
-.contacts .item_link, .txt_links, .nav_bar_items .navBar_item .item_link, .txt_lists {
+.contacts .item_link, .txt_links, .portfolio .job_item .job_title, .nav_bar_items .navBar_item .item_link, .txt_lists, .portfolio .job_item .job_link {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-style: normal;
@@ -147,7 +147,7 @@ h6 {
   font-style: italic;
 }
 
-.poppins-medium-italic, .txt_quot, .quot, .code_content {
+.poppins-medium-italic, .txt_quot, .portfolio .job_item .job_dsc, .quot, .code_content {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-style: italic;
@@ -183,7 +183,7 @@ h6 {
   font-style: normal;
 }
 
-.ubuntu-regular, .footer_content, .autor_header .autor_socials a, .autor_header .autor_spec, .txt_body {
+.ubuntu-regular, .footer_content, .portfolio_content, .autor_header .autor_socials a, .autor_header .autor_spec, .txt_body {
   font-family: "Ubuntu", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -243,17 +243,17 @@ h6 {
   color: #038c8c;
 }
 
-.txt_links, .nav_bar_items .navBar_item .item_link, .txt_lists {
+.txt_links, .portfolio .job_item .job_title, .nav_bar_items .navBar_item .item_link, .txt_lists, .portfolio .job_item .job_link {
   font-size: 20px;
   letter-spacing: 1.25px;
   color: #03a696;
 }
 
-.txt_lists {
+.txt_lists, .portfolio .job_item .job_link {
   letter-spacing: 1.3px;
 }
 
-.txt_quot, .quot, .code_content {
+.txt_quot, .portfolio .job_item .job_dsc, .quot, .code_content {
   font-size: 16px;
   letter-spacing: 1.25px;
   color: #025159;
@@ -661,6 +661,47 @@ td .table_ico {
 }
 .work_content {
   width: 100%;
+}
+
+.portfolio {
+  padding-top: 20px;
+  width: 100%;
+}
+.portfolio_content {
+  font-size: 16px;
+  letter-spacing: 1.25px;
+  color: #025159;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.portfolio .job_item {
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  flex: 1;
+  flex-grow: 0;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  background-color: rgba(242, 135, 5, 0.1);
+}
+.portfolio .job_item .img_wraper {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  gap: 20px;
+}
+.portfolio .job_item .links {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.portfolio .job_item .job_link:hover {
+  color: #f28705;
 }
 
 .footer_content {

@@ -454,7 +454,67 @@ td {
 
 // ##### PORTFOLIO
 .portfolio {
-	
+	padding-top: 20px;
+	width: 100%;
+
+	&_content {
+		@include font($extnd: ".ubuntu-regular", $fsz: $fs-body, $color: $color-main);
+
+		display: flex;
+		width: 100%;
+		// align-items: stretch;
+		justify-content: center;
+		flex-wrap: wrap;
+		gap: 20px;
+	}
+
+	.job_item {
+		padding: 10px;
+		border-radius: 10px;
+		display: flex;
+		flex: 1;
+		flex-grow: 0;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
+		
+		gap: 20px;
+		background-color: transparentize($color: $color-hover, $amount: 0.9);
+		// height: 300px;
+
+		.job_title {	
+			// height: 100%;	
+			@extend .txt_links;	
+		}
+		.img_wraper {	
+			display: flex;
+			height: 100%;
+			flex-direction: column;
+			// justify-content: space-between;	
+			gap: 20px;	
+		}
+		.job_img {			
+		}
+
+		.job_dsc {	
+			@extend .txt_quot;		
+		}
+
+		.links {	
+			width: 100%;
+			display: flex;
+			justify-content: space-around;
+
+		}
+
+		.job_link {
+			@extend .txt_lists;
+
+			&:hover {
+				color: $color-hover;
+			}
+		}
+	}	
 }
 
 // ### FOOTER ###
