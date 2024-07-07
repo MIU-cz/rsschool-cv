@@ -143,9 +143,9 @@ const Education = {
 		"CBS - Business Etiquette. Business meeting",
 	],
 	stats: [
-		"https://github-readme-stats.vercel.app/api/top-langs/?username=MIU-cz&theme=dark&layout=compact",
 		"https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=MIU-cz&theme=solarized_dark",
 		"https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=MIU-cz&theme=solarized_dark",
+		"https://github-readme-stats.vercel.app/api/top-langs/?username=MIU-cz&theme=dark&layout=compact",
 	],
 };
 

@@ -362,11 +362,16 @@ h6 {
   width: 100%;
   height: auto;
   padding: 20px;
-  background: linear-gradient(to right, #012e40, #025159);
+  background: linear-gradient(to right, #012e40 30%, #025159 100%);
 }
 @media (width < 1240px) {
   .nav_bar {
     grid-column: span 1;
+  }
+}
+@media (width < 475px) {
+  .nav_bar {
+    display: none;
   }
 }
 .nav_bar_items {
@@ -455,6 +460,11 @@ h6 {
   text-align: right;
 }
 
+.education {
+  padding-top: 20px;
+  width: 100%;
+}
+
 .education_content {
   font-size: 16px;
   letter-spacing: 1.25px;
@@ -506,6 +516,10 @@ h6 {
   width: 32px;
 }
 
+.code {
+  padding-top: 20px;
+  width: 100%;
+}
 .code_content {
   width: 100%;
 }
@@ -523,4 +537,20 @@ h6 {
   white-space: -pre-wrap; /* Opera <7 */
   white-space: -o-pre-wrap; /* Opera 7 */
   word-wrap: break-word; /* IE */
+}
+
+.stats {
+  padding-top: 20px;
+  width: 100%;
+}
+.stats_content {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.stats_content .stats_item {
+  flex: 1;
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */

@@ -113,10 +113,14 @@
 	width: 100%;
 	height: auto;
 	padding: 20px;
-	background: linear-gradient(to right, $color-aside, $color-main);
+	background: linear-gradient(to right, $color-aside 30%, $color-main 100%);
 
 	@media (width < 1240px) {
 		grid-column: span 1;
+	}
+
+	@media (width < 475px) {
+		display: none;
 	}
 
 	&_items {
@@ -223,6 +227,11 @@
 }
 
 // ##### EDUCATION
+.education {
+	padding-top: 20px;
+	width: 100%;
+}
+
 .education_content {
 	@include font($extnd: ".poppins-regular");
 	display: flex;
@@ -282,6 +291,9 @@
 
 // ##### CODE
 .code {
+	padding-top: 20px;
+	width: 100%;
+
 	&_content {
 		@extend .quot;
 		width: 100%;
@@ -300,6 +312,25 @@
 			white-space: -pre-wrap; /* Opera <7 */
 			white-space: -o-pre-wrap; /* Opera 7 */
 			word-wrap: break-word; /* IE */
+		}
+	}
+}
+
+// ##### STATS
+.stats {
+	padding-top: 20px;
+	width: 100%;
+
+	&_content {
+		display: flex;
+		align-items: stretch;
+		justify-content: center;
+		flex-wrap: wrap;
+		width: 100%;
+
+		.stats_item {
+			flex: 1;
+			width: 100%;
 		}
 	}
 }

@@ -1,6 +1,3 @@
-// for (const training of Education.training) {
-// 	console.log(training);
-// }
 
 // for (const lang in data.languages) {
 // 	console.log(lang);
@@ -66,5 +63,14 @@ for (let item of Education.training) {
 			<td><img class="table_ico" src="${Education.icoTraining}" alt="edu_ico"></td>
 			<td>${item}</td>
 		</tr>
+	`;
+}
+
+// ##### SOME STATS
+const statsBlock = document.querySelector(".stats_content");
+
+for (let img of Education.stats) {
+	statsBlock.innerHTML += `
+		<img class="stats_item" src="${img}" alt="statistics">
 	`;
 }
