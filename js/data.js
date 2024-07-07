@@ -8,19 +8,19 @@ const Data = {
 	social: [
 		{
 			name: "Git-Hub",
-			ico: '<i class="bi bi-github">',
+			ico: '<i class="bi bi-github"></i>',
 			bage: "https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white",
 			link: "https://github.com/MIU-cz",
 		},
 		{
 			name: "LinkedIn",
-			ico: '<i class="bi bi-linkedin">',
+			ico: '<i class="bi bi-linkedin"></i>',
 			bage: "https://img.shields.io/badge/linkedin-%230077B6.svg?style=for-the-badge&logo=linkedin&logoColor=white",
 			link: "https://www.linkedin.com/in/miu-cz",
 		},
 		{
 			name: "FaceBook",
-			ico: '<i class="bi bi-facebook">',
+			ico: '<i class="bi bi-facebook"></i>',
 			bage: "https://img.shields.io/badge/Facebook-%231877F2.svg?style=for-the-badge&logo=Facebook&logoColor=white",
 			link: "https://www.facebook.com/mehaligor.cz",
 		},
@@ -48,9 +48,9 @@ const Data = {
 	languages: {
 		English: "A2, reading technical literature, communication",
 		Czech: "B1, currently studying",
-		Russian: "freely",
-		Ukrainian: "freely",
-		ppc: "and a single language for all the inhabitants of the planet earth -> programming languages",
+		Russian: "freely / native",
+		Ukrainian: "freely / native",
+		PS: "and a single language for all the inhabitants of the planet earth -> programming languages",
 	},
 };
 
@@ -63,8 +63,8 @@ const Skills = {
 		{ data: "assets/svg/code/code-scss.svg", title: "scss" },
 		{ data: "assets/svg/code/code-php.svg", title: "php" },
 		{ data: "assets/svg/code/code-c-sharp.svg", title: "c#" },
-		{ data: "assets/svg/code/tool/tool-bootstrap.svg", title: "Bootstrap" },
-		{ data: "assets/svg/code/tool/tool-bem.svg", title: "Bem" },
+		{ data: "assets/svg/tools/tool-bootstrap.svg", title: "Bootstrap" },
+		{ data: "assets/svg/tools/tool-bem.svg", title: "Bem" },
 	],
 	tools: [
 		{ data: "assets/svg/tools/tools-vs-code.svg", title: "VS-Code" },

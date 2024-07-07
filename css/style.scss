@@ -17,13 +17,19 @@
 
 	&_aside {
 		grid-column: span 4;
-		padding: 20px;
+		padding: 20px 0;
 		background-color: $color-aside;
 	}
 
 	&_section {
 		grid-column: span 8;
 		padding: 20px;
+	}
+
+	&_footer {
+		grid-column: span 12;
+		padding: 20px;
+		background-color: $color-aside;
 	}
 
 	@media (width < 1240px) {
@@ -34,6 +40,10 @@
 		& > * {
 			grid-column: span 1;
 			width: 100%;
+		}
+
+		&_aside {
+			order: 1;
 		}
 	}
 }
@@ -119,7 +129,7 @@
 		grid-column: span 1;
 	}
 
-	@media (width < 475px) {
+	@media (width < 768px) {
 		display: none;
 	}
 
@@ -149,6 +159,96 @@
 
 // ### MAIN ### -> ASIDE
 // ==============================
+.aside_wraper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 20px;
+	gap: 20px;
+	width: 100%
+}
+
+.aside_headers {
+	@extend .txt_headers;
+	width: 100%;
+	padding: 10px 20px;
+	text-align: left;
+	text-transform: capitalize;
+	color: $color-wite;
+	background: linear-gradient(to right, $color-main 30%, $color-text 70%, $color-wite);
+
+	@media (width < 375px) {
+		font-size: $fs-body * 2;
+	}
+}
+
+.contacts {
+	
+	&_content {
+		display: flex;
+		width: 100%;
+		flex-direction: column;
+		gap: 10px;
+		padding: 20px 20px 0;
+	}
+
+	&_item,
+	.item_link {
+		@include font($extnd:".poppins-medium", $fsz: $fs-body, $color: $color-links);
+	}
+}
+
+.skills {
+	padding-top: 20px;
+
+	&_content {
+		display: flex;
+		width: 100%;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 20px;
+		padding: 20px 20px 0;
+	}
+
+	.skills_item{
+		display: block;
+		width: $fs-body * 4;
+		height: $fs-body * 4;
+	}
+
+	.subheaders {
+		width: 100%;
+		@include font($extnd:".poppins-medium", $fsz: $fs-body * 2, $color: $color-wite);
+		text-align: center;
+		padding-top: 20px;
+
+		&::after {
+			content: " ";
+			display: block;
+			width: 70%;
+			height: 2px;
+			margin: 20px auto 0;
+			background-color: transparentize($color: $color-hover, $amount: 0.7);
+		}
+	}
+}
+
+.lang {
+	padding-top: 40px;
+
+	&_content {
+		display: flex;
+		width: 100%;
+		flex-direction: column;
+		gap: 10px;
+		padding: 20px 20px 0;
+	}
+
+	&_item {
+		@include font($extnd:".poppins-medium", $fsz: $fs-body * 1.25, $color: $color-links);
+	}
+
+}
 
 // ### MAIN ### -> SECTION
 // ==============================
@@ -180,7 +280,7 @@
 	background-color: transparentize($color: $color-hover, $amount: 0.9);
 
 	@extend .txt_quot;
-	
+
 	p {
 		text-align: right;
 	}
@@ -243,7 +343,7 @@
 		flex-direction: column;
 		gap: 20px;
 		width: 100%;
-	
+
 		&_table {
 			width: 100%;
 		}
@@ -257,7 +357,7 @@
 	align-items: center;
 	text-transform: capitalize;
 	color: $color-main;
-	
+
 	.table_ico {
 		width: $fs-body * 3;
 	}
@@ -336,6 +436,7 @@ td {
 
 		.stats_item {
 			flex: 1;
+			-ms-flex: 1;
 			width: 100%;
 		}
 	}
@@ -353,3 +454,48 @@ td {
 
 // ### FOOTER ###
 // ==============================
+.footer_content {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	@include font($extnd:".ubuntu-regular", $fsz: $fs-body * 2.5, $color: $color-text);
+}
+
+.autor_links {
+	display: flex;
+	// flex-direction: row;
+	justify-content: end;
+	gap: 40px;
+
+	li {
+		display: inline-block;
+		
+		a {
+			@extend .txt_headers;
+
+			& > i:hover {
+				color: $color-hover;
+			}
+		}
+	}
+}
+
+.rsschool {
+	a {
+		display: block;
+		width: auto;
+		color: $color-text;
+
+		&:hover {
+			// svg, g, path, clipPath, ellipse {
+			// 	fill: $color-hover;
+			// }
+			color: $color-hover;
+		}
+	}
+
+	svg {
+		height: $fs-body * 2.5;
+		pointer-events: none;		
+	}
+}

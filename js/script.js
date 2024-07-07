@@ -1,13 +1,3 @@
-
-// for (const lang in data.languages) {
-// 	console.log(lang);
-// 	console.log(data.languages[lang]);
-// }
-
-// for (const work of Work) {
-//     console.log(work.name);
-// }
-
 // ### HEADER
 // ==================
 document.querySelector(".autor_name").textContent = Data.autor.name + " " + Data.autor.surname;
@@ -30,7 +20,7 @@ const NavBar = document.getElementById("navBar"),
 Sections.forEach((section) => {
 	NavBar.innerHTML += `
 		<li class="navBar_item">
-			<a href="#${section.id}" class="item_link">${section.textContent}</a>
+			<a class="item_link" href="#${section.id}">${section.textContent}</a>
 		</li>
 	`;
 });
@@ -86,5 +76,62 @@ for (let item of Work.jobs) {
 			<td>${item.specializacion}</td>
 			<td>${item.date}</td>
 		</tr>
+	`;
+}
+
+// ##### PORTFOLIO
+
+
+// ### ASIDE
+// ==================
+const Contacts = document.querySelector(".contacts_content");
+
+for (let item of Data.contact) {
+	Contacts.innerHTML += `
+		<li class="contacts_item">
+			${item.ico}
+			<span>${item.name}: 
+			<a class="item_link" href="${item.link}">${item.content}</a>
+			</span>
+		</li>
+	`;
+}
+
+for (let item of Data.social) {
+	Contacts.innerHTML += `
+		<li class="contacts_item">
+			${item.ico}
+			<span>
+			<a class="item_link" href="${item.link}">${item.name}</a>
+			</span>
+		</li>
+	`;
+}
+
+const SkillsBlock = document.getElementById("prog");
+for (let item of Skills.icons) {
+	SkillsBlock.innerHTML += `
+		<object class="skills_item" type="${Skills.type}" data="${item.data}" title="${item.title}"></object>
+	`;
+}
+const ToolsBlock = document.getElementById("tools");
+for (let item of Skills.tools) {
+	ToolsBlock.innerHTML += `
+		<object class="skills_item" type="${Skills.type}" data="${item.data}" title="${item.title}"></object>
+	`;
+}
+const OsBlock = document.getElementById("os");
+for (let item of Skills.os) {
+	OsBlock.innerHTML += `
+		<object class="skills_item" type="${Skills.type}" data="${item.data}" title="${item.title}"></object>
+	`;
+}
+
+const LangBlock = document.querySelector(".lang_content");
+for (let item in Data.languages) {
+	LangBlock.innerHTML += `
+		<li class="lang_item">
+			>> ${item}: ${Data.languages[item]}
+		</li>
 	`;
 }
