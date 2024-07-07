@@ -152,12 +152,8 @@ const Education = {
 const Work = {
 	icoBag: "assets/svg/edu/business-bag.svg",
 	icoMan: "assets/svg/edu/business-man.svg",
+	summary: "more then 20 years of management & bizdev experience ...",
 	jobs: [
-		{
-			name: "",
-			date: "",
-			specialization: "",
-		},
 		{
 			name: "BDO - MILITON",
 			date: "2022",
