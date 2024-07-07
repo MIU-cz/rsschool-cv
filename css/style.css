@@ -92,7 +92,7 @@ h6 {
   font-style: normal;
 }
 
-.poppins-medium, .education_content td, .education_content .table_cap .table_title, .txt_links, .nav_bar_items .navBar_item .item_link, .txt_lists {
+.poppins-medium, td, .table_cap .table_title, .txt_links, .nav_bar_items .navBar_item .item_link, .txt_lists {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-style: normal;
@@ -146,7 +146,7 @@ h6 {
   font-style: italic;
 }
 
-.poppins-medium-italic, .txt_quot {
+.poppins-medium-italic, .txt_quot, .quot, .code_content {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-style: italic;
@@ -252,10 +252,10 @@ h6 {
   letter-spacing: 1.3px;
 }
 
-.txt_quot {
+.txt_quot, .quot, .code_content {
   font-size: 16px;
   letter-spacing: 1.25px;
-  color: #012e40;
+  color: #025159;
 }
 
 .body {
@@ -413,10 +413,12 @@ h6 {
 
 .quot, .code_content {
   width: 100%;
-  height: 100%;
   border-radius: 20px;
   padding: 20px;
-  background-color: rgba(2, 81, 89, 0.2);
+  background-color: rgba(242, 135, 5, 0.1);
+}
+.quot p, .code_content p {
+  text-align: right;
 }
 .quot img, .code_content img {
   width: 100%;
@@ -464,7 +466,6 @@ h6 {
   padding-top: 20px;
   width: 100%;
 }
-
 .education_content {
   font-size: 16px;
   letter-spacing: 1.25px;
@@ -477,7 +478,8 @@ h6 {
 .education_content_table {
   width: 100%;
 }
-.education_content .table_cap {
+
+.table_cap {
   display: flex;
   width: 100%;
   gap: 20px;
@@ -485,34 +487,36 @@ h6 {
   text-transform: capitalize;
   color: #025159;
 }
-.education_content .table_cap .table_ico {
-  width: 32px;
+.table_cap .table_ico {
+  width: 48px;
 }
-.education_content .table_cap .table_title {
+.table_cap .table_title {
   font-size: 24px;
   letter-spacing: 1.25px;
   color: #025159;
 }
-.education_content .table_row {
+
+.table_row {
   width: 100%;
 }
 @media (width < 648px) {
-  .education_content .table_row {
+  .table_row {
     display: flex;
     flex-wrap: wrap;
   }
 }
-.education_content td {
+
+td {
   font-size: 16px;
   letter-spacing: 1.25px;
   color: #038c8c;
   padding: 10px 5px;
   vertical-align: top;
 }
-.education_content td:nth-child(2) {
+td:nth-child(2) {
   color: #025159;
 }
-.education_content td .table_ico {
+td .table_ico {
   width: 32px;
 }
 
@@ -552,5 +556,13 @@ h6 {
 }
 .stats_content .stats_item {
   flex: 1;
+  width: 100%;
+}
+
+.work {
+  padding-top: 20px;
+  width: 100%;
+}
+.work_content {
   width: 100%;
 }/*# sourceMappingURL=style.css.map */

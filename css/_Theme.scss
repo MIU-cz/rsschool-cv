@@ -39,5 +39,5 @@ $max-width: 1200px;
 }
 
 .txt_quot {
-	@include font($extnd: ".poppins-medium-italic", $color: $color-aside);
+	@include font($extnd: ".poppins-medium-italic", $color: $color-main);
 }

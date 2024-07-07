@@ -74,3 +74,17 @@ for (let img of Education.stats) {
 		<img class="stats_item" src="${img}" alt="statistics">
 	`;
 }
+
+// ##### WORK EXPERIENCE
+const WorkTable = document.getElementById("tableWork");
+
+for (let item of Work.jobs) {
+	WorkTable.innerHTML += `
+		<tr class="table_row">
+			<td><img class="table_ico" src="${Work.icoBag}" alt="work_ico"></td>
+			<td>${item.name}</td>
+			<td>${item.specializacion}</td>
+			<td>${item.date}</td>
+		</tr>
+	`;
+}

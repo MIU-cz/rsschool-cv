@@ -174,10 +174,16 @@
 
 .quot {
 	width: 100%;
-	height: 100%;
+	// height: 100%;
 	border-radius: 20px;
 	padding: 20px;
-	background-color: transparentize($color: $color-main, $amount: 0.8);
+	background-color: transparentize($color: $color-hover, $amount: 0.9);
+
+	@extend .txt_quot;
+	
+	p {
+		text-align: right;
+	}
 
 	img {
 		width: 100%;
@@ -230,62 +236,62 @@
 .education {
 	padding-top: 20px;
 	width: 100%;
+
+	&_content {
+		@include font($extnd: ".poppins-regular");
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+		width: 100%;
+	
+		&_table {
+			width: 100%;
+		}
+	}
 }
 
-.education_content {
-	@include font($extnd: ".poppins-regular");
+.table_cap {
 	display: flex;
-	flex-direction: column;
-	gap: 20px;
 	width: 100%;
+	gap: 20px;
+	align-items: center;
+	text-transform: capitalize;
+	color: $color-main;
 	
-	&_table {
-		width: 100%;
+	.table_ico {
+		width: $fs-body * 3;
 	}
 
-	.table_cap {
+	.table_title {
+		@include font($extnd: ".poppins-medium", $fsz: $fs-body * 1.5, $color: $color-main);
+	}
+}
+
+.table_row {
+	width: 100%;
+
+	@media (width < 648px) {
 		display: flex;
-		width: 100%;
-		gap: 20px;
-		align-items: center;
-		text-transform: capitalize;
+		flex-wrap: wrap;
+	}
+}
+
+td {
+	@include font($extnd: ".poppins-medium", $fsz: $fs-body, $color: $color-text);
+	padding: 10px 5px;
+	vertical-align: top;
+
+	// &:first-child {
+	// 	width: fit-content;
+	// 	object-fit: cover;
+	// }
+
+	&:nth-child(2) {
 		color: $color-main;
-		
-		.table_ico {
-			width: $fs-body * 2;
-		}
-
-		.table_title {
-			@include font($extnd: ".poppins-medium", $fsz: $fs-body * 1.5, $color: $color-main);
-		}
 	}
 
-	.table_row {
-		width: 100%;
-
-		@media (width < 648px) {
-			display: flex;
-			flex-wrap: wrap;
-		}
-	}
-
-	td {
-		@include font($extnd: ".poppins-medium", $fsz: $fs-body, $color: $color-text);
-		padding: 10px 5px;
-		vertical-align: top;
-
-		// &:first-child {
-		// 	width: fit-content;
-		// 	object-fit: cover;
-		// }
-
-		&:nth-child(2) {
-			color: $color-main;
-		}
-
-		.table_ico {
-			width: $fs-body * 2;
-		}
+	.table_ico {
+		width: $fs-body * 2;
 	}
 }
 
@@ -332,6 +338,16 @@
 			flex: 1;
 			width: 100%;
 		}
+	}
+}
+
+// ##### WORK
+.work {
+	padding-top: 20px;
+	width: 100%;
+
+	&_content {
+		width: 100%;
 	}
 }
 
