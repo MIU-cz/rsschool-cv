@@ -1,4 +1,4 @@
-# ![Main Banner](src/miu-li-bg.jpg)
+# ![Main Banner](assets/img/miu-li-bg.jpg)
 
 ## Hello! 👋 <br> My name is Igor
 
@@ -203,12 +203,12 @@ MIU.doIt(runAction);
 ## 💼 WORK EXPERIENCE
 
 <details>
-    <summary>20 years of management experience</summary>
+    <summary>more then 20 years of management & bizdev experience</summary>
     <br>
     <ul>
     <li>BDO - MILITON
     2022 <br>
-    Construction. Engineering technology
+    Construction. Engineering technology.
     Projection, production, sale and installation of water supply, sewage, heating, ventilation and air conditioning systems, high current and low current systems
     </li>
     <li>CBDO - LPK 
@@ -217,7 +217,7 @@ MIU.doIt(runAction);
     </li>
     <li>CBDO - EBR-Group 
     2019 - 2020<br>
-    Organization of congress and exhibition events
+    Organization of congress and exhibition events.
     Rental of exhibition space, organization of events, design, engineering and construction of exhibition space, catering
     </li>
     <li>CBDO - TEHPROM 

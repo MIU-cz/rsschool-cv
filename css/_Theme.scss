@@ -1,0 +1,43 @@
+// # COLOR THEME
+$color-aside: #012e40;
+$color-main: #025159;
+$color-text: #038c8c;
+$color-links: #03a696;
+$color-hover: #f28705;
+$color-wite: #ffffff;
+
+// # FONTS
+$fs-body: 16px;
+$max-width: 1200px;
+
+@mixin font($extnd: ".ubuntu-regular", $fsz: $fs-body, $color: $color-main) {
+	@extend #{$extnd};
+	font-size: $fsz;
+	letter-spacing: 1.25px;
+	color: $color;
+}
+
+.txt_body {
+	@include font($color: $color-text);
+}
+
+.txt_main_header {
+	@include font($extnd:".ubuntu-bold", $fsz: $fs-body * 4);
+}
+
+.txt_headers {
+	@include font($extnd:".ubuntu-bold", $fsz: $fs-body * 2.5, $color: $color-text);
+}
+
+.txt_links {
+	@include font($extnd:".poppins-medium", $fsz: $fs-body * 1.25, $color: $color-links);
+}
+
+.txt_lists {
+    @extend .txt_links;
+    letter-spacing: 1.3px;
+}
+
+.txt_quot {
+	@include font($extnd: ".poppins-medium-italic", $color: $color-main);
+}
