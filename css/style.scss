@@ -118,7 +118,7 @@
 
 // ##### NAV-BAR
 .nav_bar {
-	position: relative;
+	// position: relative;
 	grid-column: span 12;
 	width: 100%;
 	height: auto;
@@ -130,7 +130,12 @@
 	}
 
 	@media (width < 768px) {
-		display: none;
+		// display: none;
+		position: absolute;
+		top: 0;
+		left: -100%;
+		width: 100%;
+		height: 100%;
 	}
 
 	&_items {
@@ -138,12 +143,19 @@
 		justify-content: center;
 		gap: 10px;
 
+		@media (width < 768px) {
+			flex-direction: column;
+			gap: 20px;
+		}
+
 		.navBar_item {
 			padding-right: 10px;
 			border-right: 1px solid $color-text;
 
 			&:last-child {
-				border: 0;
+				@media (width > 768px) {
+					border: 0;
+				}
 			}
 
 			.item_link {
@@ -155,6 +167,38 @@
 			}
 		}
 	}
+
+	&-active {
+		left: 0;
+		z-index: 100;
+	}
+}
+
+.btn_burger {
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 52px;
+	height: 52px;
+	padding: 5px;
+	color: $color-main;
+	background: none;
+
+	&:hover,
+	&-active {
+		color: $color-hover;
+	}
+
+	@media (width > 768px) {
+		display: none;
+	}
+}
+
+.scroll-top {
+	position: fixed;
+	top: 0;
+	left: 0;
 }
 
 // ### MAIN ### -> ASIDE
@@ -165,7 +209,7 @@
 	align-items: center;
 	padding-top: 20px;
 	gap: 20px;
-	width: 100%
+	width: 100%;
 }
 
 .aside_headers {
@@ -183,7 +227,6 @@
 }
 
 .contacts {
-	
 	&_content {
 		display: flex;
 		width: 100%;
@@ -194,7 +237,7 @@
 
 	&_item,
 	.item_link {
-		@include font($extnd:".poppins-medium", $fsz: $fs-body, $color: $color-links);
+		@include font($extnd: ".poppins-medium", $fsz: $fs-body, $color: $color-links);
 	}
 }
 
@@ -210,7 +253,7 @@
 		padding: 20px 20px 0;
 	}
 
-	.skills_item{
+	.skills_item {
 		display: block;
 		width: $fs-body * 4;
 		height: $fs-body * 4;
@@ -218,7 +261,7 @@
 
 	.subheaders {
 		width: 100%;
-		@include font($extnd:".poppins-medium", $fsz: $fs-body * 2, $color: $color-wite);
+		@include font($extnd: ".poppins-medium", $fsz: $fs-body * 2, $color: $color-wite);
 		text-align: center;
 		padding-top: 20px;
 
@@ -245,9 +288,8 @@
 	}
 
 	&_item {
-		@include font($extnd:".poppins-medium", $fsz: $fs-body * 1.25, $color: $color-links);
+		@include font($extnd: ".poppins-medium", $fsz: $fs-body * 1.25, $color: $color-links);
 	}
-
 }
 
 // ### MAIN ### -> SECTION
@@ -477,34 +519,33 @@ td {
 		flex-direction: column;
 		align-items: center;
 		justify-content: space-between;
-		
+
 		gap: 20px;
 		background-color: transparentize($color: $color-hover, $amount: 0.9);
 		// height: 300px;
 
-		.job_title {	
-			// height: 100%;	
-			@extend .txt_links;	
+		.job_title {
+			// height: 100%;
+			@extend .txt_links;
 		}
-		.img_wraper {	
+		.img_wraper {
 			display: flex;
 			height: 100%;
 			flex-direction: column;
-			// justify-content: space-between;	
-			gap: 20px;	
+			// justify-content: space-between;
+			gap: 20px;
 		}
-		.job_img {			
-		}
-
-		.job_dsc {	
-			@extend .txt_quot;		
+		.job_img {
 		}
 
-		.links {	
+		.job_dsc {
+			@extend .txt_quot;
+		}
+
+		.links {
 			width: 100%;
 			display: flex;
 			justify-content: space-around;
-
 		}
 
 		.job_link {
@@ -514,7 +555,7 @@ td {
 				color: $color-hover;
 			}
 		}
-	}	
+	}
 }
 
 // ### FOOTER ###
@@ -523,7 +564,7 @@ td {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	@include font($extnd:".ubuntu-regular", $fsz: $fs-body * 2.5, $color: $color-text);
+	@include font($extnd: ".ubuntu-regular", $fsz: $fs-body * 2.5, $color: $color-text);
 }
 
 .autor_links {
@@ -534,7 +575,7 @@ td {
 
 	li {
 		display: inline-block;
-		
+
 		a {
 			@extend .txt_headers;
 
@@ -561,6 +602,6 @@ td {
 
 	svg {
 		height: $fs-body * 2.5;
-		pointer-events: none;		
+		pointer-events: none;
 	}
 }

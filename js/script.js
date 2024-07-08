@@ -13,7 +13,7 @@ for (let socialLink of Data.social) {
 	document.querySelector(".autor_socials").appendChild(li);
 }
 
-// ## nav bar
+// ## NAV BAR
 const NavBar = document.getElementById("navBar"),
 	Sections = document.querySelectorAll(".section_headers");
 
@@ -23,6 +23,28 @@ Sections.forEach((section) => {
 			<a class="item_link" href="#${section.id}">${section.textContent}</a>
 		</li>
 	`;
+});
+
+const MobileNav = document.querySelector(".nav_bar"),
+	BtnBurger = document.getElementById("btnBurger"),
+	Header = document.getElementById("header");
+
+BtnBurger.addEventListener('click', function () {
+	MobileNav.classList.toggle("nav_bar-active");
+});
+
+MobileNav.addEventListener('click', function () {
+	MobileNav.classList.remove("nav_bar-active");
+});
+
+document.addEventListener('scroll', function (event) {
+    if (Header.offsetHeight < window.scrollY) {
+        BtnBurger.classList.add('scroll-top');
+    }
+
+    else {
+        BtnBurger.classList.remove('scroll-top');
+    }
 });
 
 // ### MAIN
