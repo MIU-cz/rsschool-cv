@@ -1,5 +1,6 @@
 # rsschool-cv
-### my school repo
+
+> my school repo
 
 CV-MD: [https://miu-cz.github.io/rsschool-cv/cv](https://miu-cz.github.io/rsschool-cv/cv)
 
